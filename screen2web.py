@@ -24,7 +24,7 @@ default_config = {"cmd_screenshot": "", "cmd_open_url": ""}
 os_name =  platform.uname()[0].lower()
 if os_name == "darwin":
     default_config["cmd_screenshot"] = "screencapture -i %s"
-    default_config["cmd_open_url"] = "open -a Google\ Chrome %s &"
+    default_config["cmd_open_url"] = "open -e %s"
 elif os_name == "linux":
     default_config["cmd_screenshot"] = "sleep 0.2; scrot -s %s"
     default_config["cmd_open_url"] = "chromium-browser %s &"
